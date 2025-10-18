@@ -35,46 +35,6 @@ AgenticRAG is an intelligent document Q&A system that goes beyond traditional RA
                   └─────────────────┘
 ```
 
-<!--
-### LangGraph Workflow
-
-```mermaid
-graph TD
-   A[User Query] --> B[Retriever Node]
-
-B --> C{Relevant Docs Found?}
-C -->|Yes| D[RAG Node]
-C -->|No| E[Web Search Node]
-D --> F[Summarizer Node]
-E --> F
-F --> G[Response to User]
-
-```
--->
-
-<!--
-### Detailed Node Functions
-
-1. **Retriever Node**:
-   - Enhances queries with recent context
-   - Performs similarity search with distance filtering
-   - Determines if RAG or web search should be used
-
-2. **RAG Node**:
-   - Combines document context with conversation input
-   - Uses Groq LLM for intelligent responses
-   - Provides source attribution
-
-3. **Web Search Node**:
-   - Activates when documents don't contain answers
-   - Uses SerpAPI for real-time web information
-   - Incorporates context in search queries
-
-4. **Summarizer Node**:
-   - Refines and formats responses
-   - Ensures professional, readable output
--->
-
 ## Project Structure
 
 ```
@@ -93,12 +53,14 @@ AgenticRAG/
 │ └── public/
 └── chroma_db/ # Main vector database
 
-````
+```
 
 1. **Clone and navigate to project**:
 
    ```bash
    cd AgenticRAG
+   ```
+
 ````
 
 2. **Install Python dependencies**:
@@ -181,3 +143,4 @@ AgenticRAG/
 - **ChromaDB**: For vector storage
 - **FastAPI**: For the REST API framework
 - **React**: For the frontend interface
+````
