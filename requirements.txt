@@ -1,0 +1,24 @@
+langchain_community
+langchain_unstructured
+langchain_text_splitters
+langchain_huggingface
+langchain_chroma
+langchain_groq
+langchain
+dotenv
+sentence-transformers
+
+# serpapi
+google-search-results
+
+# langgraph
+langgraph
+
+# FastAPI
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+
+# typing (built-in, but keeping for clarity)
+typing_extensions
